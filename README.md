@@ -61,7 +61,7 @@ flatpak run --env=PLEXAMP_TWEAKS_DEBUG=1 com.plexamp.Plexamp//beta
 
 ## Other scaling options (no shim needed)
 
-- **Ctrl+Shift+`-`**: Plexamp's own font size control. This changes text size inside the app,
+- **Ctrl+Shift+`=`** / **Ctrl+Shift+`-`**: Plexamp's own font size control (bigger / smaller). This changes text size inside the app,
   separately from `PLEXAMP_ZOOM`, which scales the whole page.
 - `GDK_SCALE=2`: whole-number GTK scaling.
 
