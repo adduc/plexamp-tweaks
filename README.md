@@ -79,3 +79,7 @@ fractional amount.
   scrolling may still happen.
 - If a future Plexamp stops calling `webkit_web_view_get_settings`, the shim will silently do
   nothing. Use `PLEXAMP_TWEAKS_DEBUG=1` to check.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
