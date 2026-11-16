@@ -61,9 +61,13 @@ flatpak run --env=PLEXAMP_TWEAKS_DEBUG=1 com.plexamp.Plexamp//beta
 
 ## Other scaling options (no shim needed)
 
-- **Ctrl+`=` / Ctrl+`-` / Ctrl+`0`** or **Ctrl+scroll wheel**: Tauri's built-in zoom, in 0.2
-  steps. It always counts from 1.0, so with `PLEXAMP_ZOOM=1.25` the first Ctrl+`=` goes to 1.2.
+- **Ctrl+Shift+`-`**: Plexamp's own font size control. This changes text size inside the app,
+  separately from `PLEXAMP_ZOOM`, which scales the whole page.
 - `GDK_SCALE=2`: whole-number GTK scaling.
+
+Plexamp turns off Tauri's built-in page zoom keys, so plain Ctrl+`=` / Ctrl+`-` / Ctrl+`0` and
+Ctrl+scroll wheel don't zoom. That makes `PLEXAMP_ZOOM` the only way to scale the whole page by a
+fractional amount.
 - `GDK_DPI_SCALE=1.2`: scales text only.
 
 ## Notes and limits
